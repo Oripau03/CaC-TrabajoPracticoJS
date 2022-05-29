@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<!----- definición de html 5 -->
+<html lang="es">
+<!----- definición del lenguaje -->
+<!------Inicio del  HEAD -->
+
+<head>
+    <title>Trabajo Práctico CAC I</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom -->
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <!----- icono para apple y safari -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <!-- iconos  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <!-- tipo de letra -->
+    <!-- carga CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+
+
+</head>
+<!-----
+.text-primary  		azul
+.text-secondary		gris
+.text-success		verde
+.text-danger		rojo
+.text-warning		amarillo
+.text-info			celeste
+.text-light			blanco
+.text-dark			negro
+.text-muted			gris oscuro
+.text-white			gris claro
+-->
+<!------------------------------------------------------------------ Fin del  HEAD -->
+
+<body>
+    <!-- Header 
+	nav = cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual 
+	o a otros documentos
+	-->
+
+    <nav id="main_nav"
+        class="navbar navbar-expand-lg navbar-light bg-white shadow d-flex align-items-center justify-content-around sticky-top fixed-top">
+
+        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+	navbar-light = texto negro de la letra
+	bg-white = fondo de color blanco
+	-->
+
+        <div class="d-flex justify-content-around align-items-center mx-md-4">
+
+            <a class="navbar-brand h1" href="index.html">
+                <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->
+                <i class='bx bx-buildings bx-sm text-dark'></i>
+                <!--	bx bx-buildings = icono del logo de la web: 
+				http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+				https://boxicons.com/
+				-->
+
+                <span id="text-logo"class="h4">Domo</span><span class="text-logo h4">Propiedades</span>
+            </a>
+
+            <!--	boton de hamburguesa -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <!------------------------------------------- Opciones del Menu		-->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="navbar-toggler-success">
+
+                <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+		por un punto de interrupción principal.
+		flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+		d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+		directos en elementos flexibles
+		-->
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <!--   .navbar-nav para una navegación ligera y de altura completa 
+					   (incluida la compatibilidad con menús desplegables).-->
+                        <li class="nav-item px-3">
+                            <a class="nav-link px-1" href="index.html">Home</a>
+                            <!-- px = padding y mx es el margin 
+						rounded-pill =genera ese boton con bordes redondeados rounded-circle-->
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link px-1" href="about.html">Sobre
+                                Nosotros</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link px-1" href="properties.html">Propiedades</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link px-1" href="realtors.html">Agentes</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link px-1" href="contact.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!---------------------------------------------------------Fin de las opciones del menu
+------------------------------------------------------------ Inicio de los iconos del menu-->
+                <div class="navbar align-self-center d-flex">
+                    <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover px-2'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm px-2'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm px-2'></i></a>
+                    <!--	https://iconify.design/icon-sets/bx/-->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!----------------------------------------------------------- Fin de los iconos del menu  -->
+
+    <!-- Close Header -->
+    <!----------------------------------------------------------- Fin del Header-->
+
+    <!-- Start Banner Hero -->
+    <div class="banner-wrapper bg-light w-100">
+        <div id="index_banner" class="banner-vertical-center-index">
+
+            <!-- Start slider -->
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="Imagen Carousel">
+                    <div class="carousel-caption d-md-block">
+                      <h1>Encuentra ahora tu hogar ideal</h1>
+                      <p>En <strong>Domo</strong> te ayudaremos en todo el proceso para encontrar tu casa soñada.</p>
+                      <button type="button" class="btn btn-outline-primary btn-light">Comenzar</button>
+
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="Imagen Carousel">
+                    <div class="carousel-caption d-md-block">
+                      <h1>Conoce todas las propiedades que tenemos disponibles para ti</h1>
+                      <button type="button" class="btn btn-outline-primary btn-light">Ver ahora</button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="Imagen Carousel">
+                    <div class="carousel-caption d-md-block">
+                      <h1>En Domo contamos con los mejores asesesores de ventas</h1>
+                      <button type="button" class="btn btn-outline-primary btn-light">Contactar ahora</button>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+    <!-- End Banner Hero -->
+
+    <!-- Start Service -->
+    <section class="service-wrapper">
+        <div class="service-tag py-5 bg">
+            <div class="col-md-12">
+                <h3 class="col-md-12 text-center p-3">Busca la propiedad de tus sueños</h3>
+                <ul class="nav d-flex justify-content-center">
+                    <li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link active btn-outline px-4" href="#" data-filter=".property">Todo</a>
+                        <!-- btn-outline = boton transparente -->
+                    </li>
+                    <li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline px-4" href="#" data-filter=".home">Casas</a>
+                    </li>
+                    <li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline px-4" href="#" data-filter=".apart">Departamentos</a>
+                    </li>
+                    <li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline px-4" href="#"
+                            data-filter=".vacation">Vacacionales</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container overflow-hidden py-5">
+        <div class="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-3 properties">
+
+            <!-- Comienzan las propiedades -->
+            <div class="col-xl-3 col-md-4 col-sm-6 property home">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0 h-100">
+                    <img class="service card-img" src="./assets/img/property_1.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">UI/UX
+                                diseño</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Property -->
+
+            <!-- Start Property -->
+            <div class="col-xl-3 col-md-4 col-sm-6 property apart">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0 h-100">
+                    <img class="card-img" src="./assets/img/property_2.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Redes
+                                Sociales</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Property -->
+
+            <!-- Start Property -->
+            <div class="col-xl-3 col-md-4 col-sm-6 property branding home">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0 h-100">
+                    <img class="card-img" src="./assets/img/property_3.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Marketing</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Property -->
+
+            <!-- Start Property -->
+            <div class="col-xl-3 col-md-4 col-sm-6 property home vacation">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0 h-100">
+                    <img class="card-img" src="./assets/img/property_4.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Gráfica</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Property -->
+
+            <!-- Start Property -->
+            <div class="col-xl-3 col-md-4 col-sm-6 property home vacation">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0 h-100">
+                    <img class="card-img" src="./assets/img/property_5.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Marketing
+                                Digital</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Property -->
+
+            <!-- Start Property -->
+            <div class="col-xl-3 col-md-4 col-sm-6 property apart">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0 h-100">
+                    <img class="card-img" src="./assets/img/property_6.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Branding</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Property -->
+
+            <!-- Start Property -->
+            <div class="col-xl-3 col-md-4 col-sm-6 property apart vacation">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0 h-100">
+                    <img class="card-img" src="./assets/img/property_7.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Negocios</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Property -->
+
+            <!-- Start Property -->
+            <div class="col-xl-3 col-md-4 col-sm-6 property apart vacation">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0 h-100">
+                    <img class="card-img" src="./assets/img/property_8.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Branding</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Property -->
+
+        </div>
+    </section>
+    <!-- End Properties -->
+
+    <!-- Start View Work -->
+    <section class="bg">
+        <div class="container py-5">
+            <div class="row d-flex justify-content-center text-center">
+                <div class="col-lg-6 col-12 text-light">
+                    <h3 class="h4">Contacta ahora a uno de nuestros agentes</h3>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <a href="#" type="button" class="btn btn-outline-primary btn-light">Contactar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End View Work -->
+
+    <!-- Start Team -->
+    <section class="py-5 mb-5">
+        <div class="container">
+            <div class="team-header row text-center pb-5">
+                <h2 class="col-md-6 m-auto h2 semi-bold-600 py-3">Nuestros Agentes</h2>
+            </div>
+            <div class="row gy-5 g-lg-5 mb-4">
+
+                <!-- Start Team -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="team card border-0 shadow-lg overflow-hidden">
+                        <img class="team-img card-img" src="./assets/img/team-01.jpg" alt="Card image">
+                        <div class="team-vertical card-img-overlay d-flex align-items-end">
+                            <div class="team-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Agente</h3>
+                                <p class="card-text">Ullamco laboris nisi ut aliquip ex</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Team -->
+
+                <!-- Start Team -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="team card border-0 shadow-lg overflow-hidden">
+                        <img class="team-img card-img" src="./assets/img/team-02.jpg" alt="Card image">
+                        <div class="team-vertical card-img-overlay d-flex align-items-end">
+                            <div class="team-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Agente</h3>
+                                <p class="card-text">Psum officia anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Team -->
+
+                <!-- Start Team -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="team card border-0 shadow-lg overflow-hidden">
+                        <img class="team-img card-img" src="./assets/img/team-03.jpg" alt="Card image">
+                        <div class="team-vertical card-img-overlay d-flex align-items-end">
+                            <div class="team-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Agente</h3>
+                                <p class="card-text">Sum dolor sit consencutur</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Team -->
+
+                <!-- Start Team -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="team card border-0 shadow-lg overflow-hidden">
+                        <img class="team-img card-img" src="./assets/img/team-04.jpg" alt="Card image">
+                        <div class="team-vertical card-img-overlay d-flex align-items-end">
+                            <div class="team-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Agente</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Team -->
+
+                <!-- Start Team -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="team card border-0 shadow-lg overflow-hidden">
+                        <img class="team-img card-img" src="./assets/img/team-05.jpg" alt="Card image">
+                        <div class="team-vertical card-img-overlay d-flex align-items-end">
+                            <div class="team-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Agente</h3>
+                                <p class="card-text">Put enim ad minim veniam</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Team -->
+
+                <!-- Start Team -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="team card border-0 shadow-lg overflow-hidden">
+                        <img class="team-img card-img" src="./assets/img/team-06.jpg" alt="Card image">
+                        <div class="team-vertical card-img-overlay d-flex align-items-end">
+                            <div class="team-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Agente</h3>
+                                <p class="card-text">Mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Team -->
+
+            </div>
+        </div>
+    </section>
+    <!-- End Team -->
+
+
+
+    <!-- Start Footer -->
+    <footer class="bg pt-4">
+        <div class="container ">
+            <div class="row d-flex justify-content-between py-5">
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <i class='bx bx-buildings bx-sm text-light'></i>
+                        <span id="text-logo" class="text-light h5">Domo</span><span class="text-light h5 semi-bold-600">Propiedades</span>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut.
+                    </p>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="http://facebook.com/">
+                                <i class='bx bxl-facebook-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                                <i class='bx bxl-linkedin-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                <i class='bx bxl-whatsapp-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.flickr.com/">
+                                <i class='bx bxl-flickr-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.medium.com/">
+                                <i class='bx bxl-medium-square bx-md'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300">Navegación</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light" href="index.html">Home</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="about.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="work.html">Propiedades</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a
+                                    class="text-decoration-none text-light py-1" href="pricing.html">Agentes</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Atendemos en:</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1"
+                                href="tel:010-020-0340">021-2354-4568</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
+                                href="mailto:info@company.com">info@company.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-primary py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © Copyright 2021 Marke-Ting. Todos los derechos reservados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function () {
+            // init Isotope
+            var $properties = $('.properties').isotope({
+                itemSelector: '.property',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function () {
+                var data_filter = $(this).attr("data-filter");
+                $properties.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("text-dark");
+                $(".filter-btn").removeClass("fw-bold");
+                $(this).addClass("active");
+                $(this).addClass("text-dark");
+                $(this).addClass("fw-bold");
+                return false;
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
